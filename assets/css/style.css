@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #8c8c82;
+}
+
+.title{
+    font-size: 55px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid black;
+}
+
+.container{
+    margin-top: 25px;
+}
+
+.left-col{
+    border-right: black;
+}
+
+.right-col{
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 5px black;
+}
+
+.hero{
+   width: 350px;
+    border-radius: 50%;
+}
