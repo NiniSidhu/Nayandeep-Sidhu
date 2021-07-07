@@ -13,6 +13,7 @@ body{
 
 .hero{
     background-image: url('../css/images/hero.png');
+    
 }
 h1{
     font-family: 'Goldman', cursive;
@@ -28,7 +29,7 @@ h4{
 }
 .row{
     display: flex;
-   justify-content: center;
+    justify-content: center;
     
 }
 .row h1{
@@ -41,4 +42,51 @@ h4{
     display: flex;
    justify-content: center;
     
+}
+
+.icons a{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px; 
+    margin-bottom: 130px;
+    
+}
+.row p{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.about{
+    font-size: 45px;
+    font-family: 'Satisfy', cursive;
+    margin-top: 150px;
+    margin-bottom: 0px;
+   
+}
+
+.details{
+    font-family: 'Goldman', cursive;
+    font-size: 50px;
+    margin-top: 0px ;
+   
+    padding-bottom: 20px;
+}
+
+.myImage{
+    width: 250px;
+    padding: 0;
+    margin-top: 40px;
+    border-radius: 50%;
+    border: 6px solid black;
+    position: absolute;
+    left: 620px;
+    bottom: 10px
+
+}
+
+.col{
+    display: flex;
+    justify-content: center;
 }
