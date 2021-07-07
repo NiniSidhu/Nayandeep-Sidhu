@@ -8,34 +8,37 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #8c8c82;
-}
-
-.title{
-    font-size: 55px;
-    font-family: 'Dancing Script', cursive;
-    color: white;
-}
-
-.nav-item a:hover{
-    border-bottom: 2px solid black;
-}
-
-.container{
-    margin-top: 25px;
-}
-
-.left-col{
-    border-right: black;
-}
-
-.right-col{
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 10px 5px black;
+    background-color: #e6e6e6;
 }
 
 .hero{
-   width: 350px;
-    border-radius: 50%;
+    background-image: url('../css/images/hero.png');
+}
+h1{
+    font-family: 'Goldman', cursive;
+    color: white;
+}
+h4{
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+.row{
+    display: flex;
+   justify-content: center;
+    
+}
+.row h1{
+    display: flex;
+   justify-content: center;
+   font-size: 70px;
+    
+}
+.row h4{
+    display: flex;
+   justify-content: center;
+    
 }
