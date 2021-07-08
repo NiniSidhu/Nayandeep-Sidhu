@@ -30,7 +30,6 @@ h4{
 .row{
     display: flex;
     justify-content: center;
-    
 }
 .row h1{
     display: flex;
@@ -48,8 +47,7 @@ h4{
     display: flex;
     justify-content: center;
     margin-right: 20px; 
-    margin-bottom: 130px;
-    
+    margin-bottom: 155px;
 }
 .row p{
     
@@ -74,19 +72,30 @@ h4{
     padding-bottom: 20px;
 }
 
+
+
 .myImage{
     width: 250px;
     padding: 0;
-    margin-top: 40px;
+    
     border-radius: 50%;
     border: 6px solid black;
+
     position: absolute;
     left: 620px;
-    bottom: 10px
-
+    top: 500px;
+    
 }
 
 .col{
     display: flex;
     justify-content: center;
+}
+
+.skills{
+    font-size: 45px;
+    font-family: 'Satisfy', cursive;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: white;
 }
