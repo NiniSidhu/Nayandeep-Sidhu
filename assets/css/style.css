@@ -68,7 +68,6 @@ h4{
     font-family: 'Goldman', cursive;
     font-size: 50px;
     margin-top: 0px ;
-   
     padding-bottom: 20px;
 }
 
@@ -98,4 +97,24 @@ h4{
     margin-top: 100px;
     margin-bottom: 0px;
     color: white;
+}
+
+.best{
+    font-family: 'Goldman', cursive;
+    font-size: 50px;
+    margin-top: 0px ;
+    padding-bottom: 20px;
+    color: white; 
+}
+
+.portfolio{
+    background-color: #f9a825;
+}
+
+.files{
+    background-color: black;
+    margin-right: 30px;
+    margin-top: 10px; 
+    color: white;
+    padding:50px; 
 }
