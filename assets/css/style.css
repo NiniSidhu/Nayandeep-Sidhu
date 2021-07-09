@@ -118,3 +118,14 @@ h4{
     color: white;
     padding:50px; 
 }
+.map{
+    background-image: url('../css/images/map.png');
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.text{
+    color: white;
+}
