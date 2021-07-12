@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,10 +9,13 @@ html{
 }
 body{
     background-color: #e6e6e6;
+    margin-top: 0px;
+    padding-top: 0px; 
 }
 
 .hero{
     background-image: url('../css/images/hero.png');
+    margin-top: 0px;
     
 }
 h1{
@@ -82,7 +85,7 @@ h4{
 
     position: absolute;
     left: 620px;
-    top: 500px;
+    top: 550px;
     
 }
 
@@ -94,7 +97,7 @@ h4{
 .skills{
     font-size: 45px;
     font-family: 'Satisfy', cursive;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 0px;
     color: white;
 }
@@ -107,8 +110,25 @@ h4{
     color: white; 
 }
 
+.resume{
+    font-size: 45px;
+    font-family: 'Satisfy', cursive;
+     margin-top: 50px; 
+    margin-bottom: 0px;
+   
+}
+
+.resumedetails{
+    font-family: 'Goldman', cursive;
+    font-size: 50px;
+    margin-top: 0px ;
+    padding-bottom: 20px;
+}
+
 .portfolio{
     background-color: #f9a825;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
 }
 
 .files{
@@ -120,12 +140,96 @@ h4{
 }
 .map{
     background-image: url('../css/images/map.png');
+    height: max-content;
     background-size: cover;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 0px;
+    padding-bottom: 40px;
 }
 
 .text{
     color: white;
+}
+
+.navi{
+   
+    top: 200px;
+    right: -10px;
+    /* margin-top:0px;
+    padding-top: 0px; */
+    width: 300px; 
+    height: 100%;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 20px;
+    left: 70px; 
+    cursor: pointer;
+    background-color: #262626;
+
+}
+
+
+.burger{
+    width: 45px;
+    height: 3px;
+    background-color: #f9a825;
+    margin-bottom: 5px;    
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+.change .line-2{
+    opacity: 0;
+}
+.change .line-3{
+    transform: rotateZ(45deg) translate(-6px, -6px);
+}
+
+.nav-item{
+    list-style: none;
+    margin: 25px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+}
+
+.nav-link::before{
+
+}
+.nav-link::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #f9a825;
+    position: absolute;
+    left:0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after{
+    bottom: 0; 
+    transform-origin: right;
+}
+
+.nav-link::before{
+    top: 0; 
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
 }
