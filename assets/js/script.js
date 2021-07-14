@@ -8,7 +8,7 @@
 // });
 
 const menuIcon = document.querySelector('.hamburger-menu');
-const navbar = document.querySelector('.navbar')
+const navbar = document.querySelector('.navigation')
 
 menuIcon.addEventListener('click', () =>{
     navbar.classList.toggle('change')
