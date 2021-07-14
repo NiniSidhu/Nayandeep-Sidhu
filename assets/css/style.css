@@ -13,7 +13,6 @@ body{
     padding-top: 0px; 
 }
 
-
 .about-section{
     background-color: #e6e6e6;
 }
@@ -32,6 +31,7 @@ h4{
 .logo{
     width: 200px;
     height: 200px;
+    margin-top: 40px;
 }
 .row{
     display: flex;
@@ -151,186 +151,30 @@ h4{
 }
 
 .text{
-    color: white;
+    color: #e6e6e6;
 }
 
-/* .navigation{
-    display: flex;
-    justify-content:flex-end;
-} */
-
-.hamburger-menu{
-    width: 35px; 
-    height: 30px; 
-    position: fixed; 
-    cursor: pointer; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.line{
-    width: 100%;
-    height: 3px; 
-    background-color: #f9a825;
-    transition: all .8s;
-}
-
-.change .line-1{
-   transform: rotateZ(-405deg) translate(-8px, 6px); 
-}
-.change .line-2{
-    opacity: 0; 
-}
- 
-.change .line-3{
-    transform: rotateZ(405deg) translate(-8px, -6px); 
- }
- 
-.navbar{
-    width: 300px; 
-    height: 100%; 
+.navigation{
     background-color: #262626;
-    top: 0; 
-    right: -300px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15%;
-    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
-    position: relative;
-}
-
-.change{
-    right: 0; 
-}
-
-.nav-list{
-    text-align: right;
-
+    opacity: 0.7;
+    position: fixed;
+    margin-bottom: 10px;
+     
 }
 
 .nav-item{
-    list-style: none;
-    margin: 25px; 
-}
-
-.nav-link{
+    
+    color: #e6e6e6;
     text-decoration: none;
-    font-size: 22px;
-    color: #eee;
-    font-weight: 300;
-    letter-spacing: 1px;
     text-transform: uppercase;
-    position: relative;
-    padding: 3px 0px; 
-}
-
-.nav-link ::before, .nav-link::after{
-    content: "";
-    width: 100%; 
-    height: 2px; 
-    background-color: #f9a825;
-    position: absolute;
-    left: 0; 
-    transform: scaleX(0); 
-    transition: transform 0.5s ;
-}
-
-.nav-link::after{
-    bottom: 0; 
-    transform-origin: right;
-}
-.nav-link::before{
-    top: 0; 
-    transform-origin: left;
-}
-}
-
-.nav-link:hover::before, .nav-link:hover::after{
-    transform: scaleX(1);
-}
-
-/* 
-.navbar{
-   
-    top: 200px;
-    right: -10px;
-    /* margin-top:0px;
-    padding-top: 0px; 
-    width: 300px; 
-    height: 100%;
-    border-radius: 10px;
-    position: sticky;
-    bottom: 20px;
-    left: 70px; 
-    cursor: pointer;
-    background-color: #262626;
-
-}
-
-
-.burger{
-    width: 45px;
-    height: 7px;
-    background-color: #f9a825;
-    margin-bottom: 5px;    
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.change .line-1{
-    transform: rotateZ(-45deg) translate(-8px, 6px);
-}
-.change .line-2{
-    opacity: 0;
-}
-.change .line-3{
-    transform: rotateZ(45deg) translate(-6px, -6px);
-}
-
-.nav-item{
-    list-style: none;
-    margin: 25px;
-
-}
-
-.nav-link{
-    text-decoration: none;
-    font-size: 22px;
-    color: #eee;
+    letter-spacing: 2px;
     font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    padding: 3px 0;
+    
 }
 
-.nav-link::before{
-
+.nav-item:hover{
+    color: #f9a825;
+    opacity: 1;
+    font-weight: 600;
+    transform: 0.5s;
 }
-.nav-link::after{
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #f9a825;
-    position: absolute;
-    left:0;
-    transform: scaleX(0);
-    transition: transform 0.5s;
-}
-
-.nav-link::after{
-    bottom: 0; 
-    transform-origin: right;
-}
-
-.nav-link::before{
-    top: 0; 
-    transform-origin: left;
-}
-
-.nav-link:hover::before,
-.nav-link:hover::after {
-    transform: scaleX(1);
-} */
