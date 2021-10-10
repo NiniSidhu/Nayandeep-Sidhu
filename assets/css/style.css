@@ -7,10 +7,25 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
-    background-image: url('../css/images/hero.png');
+    /* background-image: url('../css/images/hero.png'); */
     margin-top: 0px;
     padding-top: 0px; 
+}
+
+.hero{
+    background-image: url('../css/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+.languages{
+    background-image: url('../css/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
 }
 
 .about-section{
@@ -85,6 +100,7 @@ h4{
     
     border-radius: 50%;
     border: 6px solid black;
+    
 
     position: absolute;
     left: 620px;
@@ -134,13 +150,13 @@ h4{
     padding-bottom: 40px;
 }
 
-.files{
+/* .files{
     background-color: black;
     margin-right: 30px;
     margin-top: 10px; 
     color: white;
     padding:50px; 
-}
+} */
 .map{
     background-image: url('../css/images/map.png');
     height: max-content;
@@ -215,3 +231,59 @@ h4{
     transform: rotateZ(405deg) translate(-8px, -6px);
 }
 
+.files{
+    width: 200px;
+    height: auto;
+}
+
+.mobileDes{
+    font-size: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+      margin: 0px;
+    }
+
+    .logo{
+        width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    }
+    h1{
+        font-family: 'Goldman', cursive;
+        color: white;
+        font-size: 30px !important;
+    }
+    h4{
+        font-size: 0px !important;
+    }
+
+    .mobileDes{
+        font-size: 20px;
+        color: white;
+    }
+
+    .navigation{
+        width: 375px;
+    }
+    .hero{
+        background-image: url('../css/images/hero.png');
+        /* background-size: 480px; */
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 480px;
+    }
+    .myImage{
+        width: 150px;
+        padding: 0;
+        border-radius: 50%;
+        border: 6px solid black;
+        position: absolute;
+        left: 170px;
+        top: 380px;
+        
+    }
+  }
