@@ -9,7 +9,6 @@ html{
 }
 
 body{
-    /* background-image: url('../css/images/hero.png'); */
     margin-top: 0px;
     padding-top: 0px; 
 }
@@ -19,12 +18,14 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: fit-content;
+    background-position: center;
 }
 
 .languages{
     background-image: url('../css/images/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: fit-content;
 }
 
@@ -61,15 +62,24 @@ h4{
 .row h4{
     display: flex;
    justify-content: center;
-    
+   font-weight: bold;
+   letter-spacing: 1px;
 }
 
 .icons a{
+    color: #f9a825;
     display: flex;
     justify-content: center;
-    margin-right: 20px; 
-    margin-bottom: 155px;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 100px;
 }
+
+.icons a:hover{
+    color: #e6e6e6;
+}
+
 .row p{
     
     display: flex;
@@ -97,14 +107,11 @@ h4{
 .myImage{
     width: 250px;
     padding: 0;
-    
     border-radius: 50%;
     border: 6px solid black;
-    
-
     position: absolute;
-    left: 620px;
-    top: 550px;
+    left: 510px;
+    top: 380px;
     
 }
 
@@ -170,63 +177,105 @@ h4{
     color: #e6e6e6;
 }
 
-.navigation{
-    background-color: #262626;
-    opacity: 0.7;
-    position: fixed;
-    margin-bottom: 10px;
-    
-}
-.nav-item{
-    
-    color: #e6e6e6;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transform: scaleX(0);
-    transition: 0.35s cubic-bezier(1,0,0,1);
-    
-}
-.change .nav-item{
-    transform: scaleX(1);
+
+.contain{
+    width: 100%;
+    /* height: 100px;    */
 }
 
-.nav-item:hover{
-    color: #f9a825;
-    opacity: 1;
-    font-weight: 600;
-    
-}
 
 .hamburger-menu{
     width: 35px;
     height: 30px;
+    /* background-color: red; */
     position: fixed;
-    top: 15px; 
-    right: 50px; 
+    top: 15px;
+    right: 50px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: scaleX(1);
 }
 
 .line{
-    width: 100%; 
+    width: 100%;
     height: 3px;
     background-color: #f9a825;
+    border: 1px solid black;
     transition: all 0.8s;
+    
+}
+
+.navibar{
+    width: 100%;
+    height: 60px;
+    background-color: #262626;
+    position: fixed;
+    top: -100px;
+    transition: top 0.6s;
+}
+
+.change{
+    top: 0px;
+}
+
+.navi-list{
+    display: flex;
+
+}
+
+.navi-item{
+    list-style: none;
+    margin: 25px;
+}
+
+.navi-link{
+    text-decoration: none;
+    font-size: 15px;
+    color: #eee;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+    bottom: 10px;
+    
+}
+
+.navi-link:hover{
+    color: #e6e6e6;
+}
+
+.navi-link::before,
+.navi-link::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #f9a825;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.navi-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+.navi-link::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.navi-link:hover::before,
+.navi-link:hover::after{
+    transform: scaleX(1);
 }
 
 .change .line-1{
     transform: rotateZ(-405deg) translate(-8px, 6px);
 }
-
 .change .line-2{
     opacity: 0;
 }
-
 .change .line-3{
     transform: rotateZ(405deg) translate(-8px, -6px);
 }
@@ -239,17 +288,18 @@ h4{
 .mobileDes{
     font-size: 0px;
 }
-
-@media screen and (max-width: 480px) {
+/* 
+@media screen and (device-width: 480px) and (device-height: 812px) 
+{
     body {
-      background-color: lightgreen;
+      background-color: #e6e6e6;
       margin: 0px;
     }
 
     .logo{
         width: 100px;
-    height: 100px;
-    margin-top: 50px;
+        height: 100px;
+        margin-top: 50px;
     }
     h1{
         font-family: 'Goldman', cursive;
@@ -266,11 +316,18 @@ h4{
     }
 
     .navigation{
-        width: 375px;
+        background-color: red;
+        height: max-content;
+        height: 500px;
+        width: 150px;
+        position: fixed;
+        left: 300px;
+
+
     }
     .hero{
         background-image: url('../css/images/hero.png');
-        /* background-size: 480px; */
+        background-size: 480px;
         background-position-x: center;
         background-repeat: no-repeat;
         height: 450px;
@@ -286,4 +343,4 @@ h4{
         top: 380px;
         
     }
-  }
+  } */
