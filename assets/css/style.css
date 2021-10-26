@@ -288,6 +288,173 @@ h4{
 }
 
 @media screen 
+  and (min-device-width: 401px) 
+  and (max-device-width: 500px) 
+{ 
+  
+    .hamburger-menu{
+        width: 35px;
+        height: 30px;
+        /* background-color: red; */
+        position: fixed;
+        top: 15px;
+        right: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .line{
+        width: 100%;
+        height: 2.8px;
+        background-color: #f9a825;
+        border: 0.5px solid black;
+        transition: all 0.8s;
+        
+    }
+  
+    .myImage{
+        position: absolute;
+        left: 140px;
+        top: 380px;
+        width: 120px;
+    }
+
+    h1{
+        font-size: 35px !important;
+    }
+    h4{
+        font-size: 13px !important;
+    }
+
+    h5{
+        font-size: 15px !important;
+        font-weight: bold !important;
+    }
+
+    h6{
+        font-size: 12px !important;
+    }
+
+    .programName{
+        margin-right: 30px;
+        padding: 0px;
+    }
+
+    .details{
+        font-family: 'Goldman', cursive;
+        font-size: 35px;
+        margin-top: 0px ;
+        padding-bottom: 20px;
+    }
+
+    .best{
+        font-family: 'Goldman', cursive;
+        font-size: 35px;
+        margin-top: 0px ;
+        padding-bottom: 20px;
+        color: white; 
+    }
+
+    .resumedetails{
+        font-family: 'Goldman', cursive;
+        font-size: 35px;
+        margin-top: 0px ;
+        padding-bottom: 20px;
+    }
+
+    .navibar{
+        width: 35%;
+        height: 100%;
+        background-color: #262626;
+        position: fixed;
+        right: -500px;
+        transition: right 0.6s;
+        /* border-radius: 8% 0 0 8%; */
+    }
+
+    .navi-item{
+        list-style: none;
+        margin: 18px 8px 18px 8px;
+    }
+    
+    .navi-link{
+        text-decoration: none;
+        font-size: 13px;
+        color: #eee;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 3px 0;
+        bottom: 8px;
+        
+    }
+
+    .change{
+        right: 0px;
+    }
+    
+    .navi-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+    
+    }
+    
+    .navi-link:hover{
+        color: #e6e6e6;
+    }
+    
+    .navi-link::before,
+    .navi-link::after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #f9a825;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: 0.5s;
+    }
+    .navi-link::after{
+        bottom: 0;
+        transform-origin: right;
+    }
+    .navi-link::before{
+        top: 0;
+        transform-origin: left;
+    }
+    
+    .navi-link:hover::before,
+    .navi-link:hover::after{
+        transform: scaleX(1);
+    }
+    
+    .change .line-1{
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+    }
+    .change .line-2{
+        opacity: 0;
+    }
+    .change .line-3{
+        transform: rotateZ(405deg) translate(-8px, -6px);
+    }
+
+
+    .about{
+        font-size: 45px;
+        font-family: 'Satisfy', cursive;
+        margin-top: 80px;
+        margin-bottom: 0px;
+       
+    }
+    
+
+}
+
+
+@media screen 
   and (min-device-width: 501px) 
   and (max-device-width: 600px) 
 { 
@@ -345,9 +512,9 @@ h4{
     
     .navi-link{
         text-decoration: none;
-        font-size: 12px;
+        font-size: 13px;
         color: #eee;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         position: relative;
         padding: 3px 0;
